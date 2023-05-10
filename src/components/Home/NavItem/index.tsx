@@ -1,4 +1,4 @@
-import { 
+import {
   FlexProps,
   Link,
   Flex,
@@ -17,7 +17,7 @@ export default function NavItem({
   ...rest
 }: NavItemProps) {
   return (
-    <Link href="#" style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+    <Link href={`/${children}`} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
         align="center"
         p="4"
